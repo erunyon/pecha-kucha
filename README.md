@@ -1,8 +1,12 @@
 # Pecha Kucha
 
+"Pecha Kucha" is a template for creating [Pecha Kucha presentations](https://secure.wikimedia.org/wikipedia/en/wiki/Pecha_Kucha).
+
 ## Changelog:
 
 ### v.1.0 : June 4, 2011
+
+Initial commit
 
 License
 -------
