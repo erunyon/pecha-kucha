@@ -8,6 +8,13 @@
 
 Initial commit
 
+## Photo Credits
+http://www.flickr.com/photos/aghrivaine/5798517048/in/photostream/
+http://www.flickr.com/photos/aghrivaine/5797946141/in/photostream/
+http://www.flickr.com/photos/aghrivaine/5798503124/in/photostream/
+http://www.flickr.com/photos/aghrivaine/5797966995/in/photostream/
+http://www.flickr.com/photos/aghrivaine/5797970777/in/photostream/
+
 License
 -------
 
