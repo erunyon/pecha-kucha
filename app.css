@@ -1,0 +1,58 @@
+/* html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+   v1.4 2009-07-27 | Authors:Eric Meyer & Richard Clark
+   html5doctor.com/html-5-reset-stylesheet/
+   ----------------------------------------------------*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,article, aside, figure, footer, header, hgroup, menu, nav, section, menu,
+time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
+body {line-height:1;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+nav ul {margin:0; padding:0; list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:''; content:none;}
+a {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent;}
+ins {background-color:#ff9; color:#000; text-decoration:none;}
+mark {background-color:#ff9; color:#000; font-style:italic; font-weight:bold;}
+del {text-decoration:line-through;}
+abbr[title], dfn[title] {border-bottom:1px dotted #000; cursor:help;}
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse:collapse; border-spacing:0;}
+hr {display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0;}
+input, select {vertical-align:middle;}
+select, input, textarea, button { font:99% sans-serif; }
+figcaption {display:block; text-align:center;}
+
+/* APP
+   ----------------------------------------------------*/
+html, body {margin:0; padding:0; width:100%; height:100%; font-size:20px; color:#fff; text-shadow:1px 1px 2px rgba(0,0,0,0.5)}
+h1 {margin:30px; font-size:30px;}
+p {margin:0 0 2em; line-height:1.4em;}
+
+.box {width:300px; height:300px;}
+.code {padding:20px; font-family:Courier; color:rgb(0,255,0); background-color:rgba(0,0,0,0.9); -webkit-box-shadow:0 0 10px rgba(0,0,0,0.8);}
+.slide { position:absolute; top:0; left:0; display:none; width:100%; height:100%; }
+.content {padding:10px 30px;}
+
+/** Structure **/
+#slides {width:100%; height:100%;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#1e5799)); /* Chrome,Safari4+ */
+  background:-webkit-linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* Chrome10+,Safari5.1+ */
+  background:linear-gradient(top, #7db9e8 0%,#1e5799 100%); /* W3C */
+}
+
+#footer {overflow:hidden; position:fixed; bottom:0; width:100%; padding:10px 0; background-color:rgba(0,0,0,0.2);}
+#footer p {float:left; margin:0 0 0 20px;}
+#footer a {color:#fff;}
+#footer a.active {font-weight:bold; color:#ccc; text-decoration:none;}
+#footer ul {position:absolute; top:10px; left:35%; width:500px; margin:0 auto; list-style:none;}
+#footer ul li {display:inline;}
+#counter {float:right; margin-right:20px;}
+
+/* SLIDES
+   ----------------------------------------------------*/
+
+/** Slide 1 **/
+#slide1 {display:block;}
+#slide1 h1 {position:relative; top:40%; margin:0; font-size:80px; text-align:center;}
