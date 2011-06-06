@@ -28,6 +28,9 @@ figcaption {display:block; text-align:center;}
    ----------------------------------------------------*/
 html, body {margin:0; padding:0; width:100%; height:100%; font-size:20px; color:#fff; text-shadow:1px 1px 2px rgba(0,0,0,0.5)}
 h1 {z-index:10; position:absolute; top:30px; left:30px; margin:0; font-size:80px;}
+h1.tr {top:30px; right:30px; left:auto;}
+h1.br {top:auto; left:auto; bottom:60px; right:30px;}
+h1.bl {top:auto; bottom:60px; left:30px;}
 p {margin:0 0 2em; line-height:1.4em;}
 img {max-width:100%; max-height:100%;}
 
@@ -38,11 +41,11 @@ img {max-width:100%; max-height:100%;}
 
 /** Images **/
 img {z-index:0;}
-.full {position:absolute; top:0; bottom:0; left:0; right:0; width:100%;}
-.tl {position:absolute; top:0; left:0;}
-.bl {position:absolute; bottom:0; left:0;}
-.tr {position:absolute; top:0; right:0;}
-.br {position:absolute; bottom:0; right:0;}
+img.full {position:absolute; top:0; bottom:0; left:0; right:0; width:100%;}
+img.tl {position:absolute; top:0; left:0;}
+img.bl {position:absolute; bottom:0; left:0;}
+img.tr {position:absolute; top:0; right:0;}
+img.br {position:absolute; bottom:0; right:0;}
 
 .p10 {width:10%;}
 .p30 {width:20%;}
@@ -62,7 +65,7 @@ img {z-index:0;}
 }
 
 #footer {overflow:hidden; position:fixed; bottom:0; width:100%; padding:10px 0; background-color:rgba(0,0,0,0.2);}
-#footer p {float:left; margin:0 0 0 20px;}
+#footer p {float:left; margin:0 0 0 20px; line-height:1em;}
 #footer a {color:#fff;}
 #footer a.active {font-weight:bold; color:#ccc; text-decoration:none;}
 #footer ul {position:absolute; top:10px; left:35%; width:500px; margin:0 auto; list-style:none;}
@@ -71,7 +74,5 @@ img {z-index:0;}
 
 /* SLIDES
    ----------------------------------------------------*/
-
-/** Slide 1 **/
 #slide1 {display:block;}
-#slide1 h1 {top:40%; width:90%; font-size:80px; text-align:center;}
+#slide1 h1 {top:40%; width:96%; font-size:80px; text-align:center;}
