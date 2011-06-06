@@ -4,7 +4,7 @@
 
 ## Changelog:
 
-### v.1.0 : June 4, 2011
+### v.1.0 : June 5, 2011
 
 * Initial commit
 
