@@ -20,8 +20,10 @@
   
     init: function() {
       console.log('init');
-      Slides.addPaging();
+      Slides.addNavigation();
       Slides.doCountdown();
+      Slides.pause();
+      Slides.changeSlide();
     },
 
     nextSlide: function() {
@@ -53,6 +55,15 @@
         }, 1000);
       }
     },
+
+    pause: function() {
+      $('#pause').click(function(e){
+        e.preventDefault();
+        Slides.togglePlay();
+        var $this = $(this);
+        ($this.html() == 'Pause') ? $this.html('Play') : $this.html('Pause');
+      });
+    },
     
     togglePlay: function() {
       if(running === true) {
@@ -64,41 +75,36 @@
       }
     },
     
-    addPaging: function() {      
+    addNavigation: function() {      
       var links = '';
       for(i = 1; i <= totalSlides; i++) {
         var active = (i === 1) ? 'active' : '';
         links += "<li><a href=\"#slide"+ i +"\" id=\"p"+ i +"\" class=\""+ active +"\">"+ i +"</a></li>";
       }
       $('#slidenav').html(links);
+    },
+    
+    changeSlide: function() {
+      $('#slidenav a').live('click', function(e){
+        e.preventDefault();
+        var $this = $(this);
+        
+        // stop the timer
+        clearTimeout(t);
+        running = false;
+        $('#pause').html('Play');
+        
+        // Hide all but the selected slide
+        $('.slide:visible').fadeOut();
+        $('#footer ul a').removeClass();
+        slide = $this.html();
+        console.log('activating slide ' + slide);
+        $($this.attr('href')).fadeIn();
+        $this.addClass('active');
+      });
     }
 
   };
   Slides.init();
-  
-  $('#pause').click(function(e){
-    e.preventDefault();
-    Slides.togglePlay();
-    var $this = $(this);
-    ($this.html() == 'Pause') ? $this.html('Play') : $this.html('Pause');
-  });
-  
-  $('#slidenav a').click(function(e){
-    e.preventDefault();
-    var $this = $(this);
-    
-    // stop the timer
-    clearTimeout(t);
-    running = false;
-    $('#pause').html('Play');
-    
-    // Hide all but the selected slide
-    $('.slide:visible').fadeOut();
-    $('#footer ul a').removeClass();
-    slide = $this.html();
-    console.log('activating slide ' + slide);
-    $($this.attr('href')).fadeIn();
-    $this.addClass('active');
-  });
   
 })();
