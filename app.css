@@ -66,7 +66,7 @@ img {z-index:0;}
 #footer a {color:#fff;}
 #footer a.active {font-weight:bold; color:#ccc; text-decoration:none;}
 #footer ul {position:absolute; top:10px; left:35%; width:500px; margin:0 auto; list-style:none;}
-#footer ul li {display:inline;}
+#footer ul li {display:inline; margin-right:5px;}
 #counter {float:right; margin-right:20px;}
 
 /* SLIDES

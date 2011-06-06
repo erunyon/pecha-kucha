@@ -20,6 +20,7 @@
   
     init: function() {
       console.log('init');
+      Slides.addPaging();
       Slides.doCountdown();
     },
 
@@ -61,6 +62,15 @@
         running = true;
         Slides.doCountdown();
       }
+    },
+    
+    addPaging: function() {      
+      var links = '';
+      for(i = 1; i <= totalSlides; i++) {
+        var active = (i === 1) ? 'active' : '';
+        links += "<li><a href=\"#slide"+ i +"\" id=\"p"+ i +"\" class=\""+ active +"\">"+ i +"</a></li>";
+      }
+      $('#slidenav').html(links);
     }
 
   };
@@ -73,7 +83,7 @@
     ($this.html() == 'Pause') ? $this.html('Play') : $this.html('Pause');
   });
   
-  $('#footer ul a').click(function(e){
+  $('#slidenav a').click(function(e){
     e.preventDefault();
     var $this = $(this);
     
