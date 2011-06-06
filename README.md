@@ -1,19 +1,20 @@
 # Pecha Kucha
 
-"Pecha Kucha" is a template for creating [Pecha Kucha presentations](https://secure.wikimedia.org/wikipedia/en/wiki/Pecha_Kucha).
+"Pecha Kucha" is a template for creating [Pecha Kucha presentations](https://secure.wikimedia.org/wikipedia/en/wiki/Pecha_Kucha) presentations using HTML and CSS instead of PowerPoint. This is especially useful when demonstrating web technologies in a presentation.
 
 ## Changelog:
 
 ### v.1.0 : June 4, 2011
 
-Initial commit
+* Initial commit
 
 ## Photo Credits
-http://www.flickr.com/photos/aghrivaine/5798517048/in/photostream/
-http://www.flickr.com/photos/aghrivaine/5797946141/in/photostream/
-http://www.flickr.com/photos/aghrivaine/5798503124/in/photostream/
-http://www.flickr.com/photos/aghrivaine/5797966995/in/photostream/
-http://www.flickr.com/photos/aghrivaine/5797970777/in/photostream/
+
+* http://www.flickr.com/photos/aghrivaine/5798517048/in/photostream/
+* http://www.flickr.com/photos/aghrivaine/5797946141/in/photostream/
+* http://www.flickr.com/photos/aghrivaine/5798503124/in/photostream/
+* http://www.flickr.com/photos/aghrivaine/5797966995/in/photostream/
+* http://www.flickr.com/photos/aghrivaine/5797970777/in/photostream/
 
 License
 -------
