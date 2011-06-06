@@ -2,6 +2,12 @@
 
 "Pecha Kucha" is a template for creating [Pecha Kucha presentations](https://secure.wikimedia.org/wikipedia/en/wiki/Pecha_Kucha) presentations using HTML and CSS instead of PowerPoint. This is especially useful when demonstrating web technologies in a presentation.
 
+So far the code has only been tested in WebKit browsers. 
+
+## Use
+
+There are some simple styles for positioning images and the title text. More will appear as I use this template more. For now it's fairly minimal.
+
 ## Changelog:
 
 ### v.1.0 : June 5, 2011
